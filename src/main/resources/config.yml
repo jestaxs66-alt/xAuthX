@@ -1,0 +1,18 @@
+settings:
+  max-failed-attempts: 3
+  max-accounts-per-ip: 2
+  login-timeout-seconds: 30
+  password-requirements:
+    min-length: 6
+    blacklisted-passwords:
+      - "12345"
+      - "qwerty"
+      - "123"
+      - "1234"
+      - "1234567890"
+      - "123456"
+      - "password"
+  antibot:
+    enabled: true
+    max-joins-per-second: 3
+    kick-message: "&cBot koruması aktif. Lütfen biraz sonra tekrar deneyin."

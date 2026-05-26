@@ -1,0 +1,22 @@
+name: xAuthX
+version: 1.0.0
+main: dev.wlenzy.auth.XAuthX
+api-version: 1.18
+authors: [Wlenzx]
+commands:
+  login:
+    description: Login command
+    usage: /login <password>
+  register:
+    description: Register command
+    usage: /register <password> <password>
+  changepassword:
+    description: Change password command
+    usage: /changepassword <oldPassword> <newPassword>
+  xauthx:
+    description: Admin commands
+    usage: /xauthx <reload/unregister/forcelogin>
+    permission: xauthx.admin
+permissions:
+  xauthx.admin:
+    default: op
